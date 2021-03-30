@@ -1,0 +1,71 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(61, 59, 59);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1  ; */
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar p {
+  color: white;
+}
+
+.filters {
+  /* height: 80%; */
+  background-color: rgba(233, 231, 231, 0.849);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* border: 5px solid red; */
+}
+.filters button {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background: rgba(233, 231, 231, 0.849);
+  color: black;
+  border: 2px solid crimson;
+  transition: all 0.4s ease-in-out;
+}
+
+.filters button:hover {
+  background-color: crimson;
+  box-shadow: 0 0 4px 2px rgb(17, 16, 16);
+  color: white;
+}
+
+.filters input {
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  /* padding: 20px; */
+}
+
+.filters input:hover {
+  border: 2px solid red;
+}
+.filter__button {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .filters {
+    flex-direction: column;
+    /* width: 90%; */
+  }
+  .filters input {
+    width: 90%;
+    margin-top: 10px;
+  }
+}
